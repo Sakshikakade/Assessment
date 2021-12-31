@@ -1,0 +1,117 @@
+Q1
+A company has defined two RAML fragments, Book Data Type and Book Example to be used in APIs.
+What would be valid RAML to use these fragments ?
+ANS- D.
+1.#%RAML 1.0
+2.title: Books
+3.Book: bookDataType.raml
+4./books:
+5. post:
+6. body:
+7. application/json:
+8. type: Book
+9. examples:
+10. input: bookExample.raml
+11. responses:
+12. 201:
+13. body:
+14. application/json:
+15. example:
+16. message: Book added
+
+Q2
+A Mule project contains a MySQL Database dependency. The project is exported from Anypoint Studio so it can be deployed to CloudHub.
+What export options create the smallest deployable archive that will successfully deploy to CloudHub?
+What export option create their smallest deployable archive that will successfully deploy to CloudHub?
+ANS- B
+ 
+Q3
+According to Semantic Versioning, which version would you change for incompatible API changes?
+ANS- MAJOR
+
+Q4
+Refer to the exhibit.
+What can be added to the flow to persist data across different flow executions?
+ANS- A-Key/value pairs in the ObjectStore
+
+Q5
+Refer to the exhibit
+All three of the condition for the Choice router are true. What log messages are written?
+ANS- A.Route 1
+
+Q6
+As a part of project requirement , you want to build an API for a legacy client. Legacy client can only consume SOAP webservices. Which type the interface documentation can be prepared to meet the requirement?
+ANS- B.WSDL file
+
+Q7
+What is the trait name you would use for specifying client credentials in RAML?
+ANS- C.client-id-required
+
+Q8
+What DataWeave expression transforms the conductorIds array to the XML output?
+ANS- C.
+1. 1. trains:
+2. 2. {(
+3. 3. conductorIds map ((engId, index) ->
+4. 4. train: {
+5. 5. engineerId: engId
+6. 6. }
+7. 7. )
+8. 8. )}
+
+
+Q9
+Refer to the exhibit.
+What is the correct way to create a user?
+ANS- B)
+
+Q10
+What is the correct way to format the decimal 200.1234 as a string to two decimal places?
+ANS- B.200.1234 as String {format: ".0#"}
+
+Q11
+How are multiple conditions used in a Choice router to route events?
+ANS- B.To find the FIRST true condition, then distribute the event to the ONE matched route.
+
+Q12
+What should this endpoint return? http://dev.acme.com/api/patients?name=John &surname=Bell
+ANS- D.Patients with name as John and surname as Bell
+
+Q13
+What is the output of Dataweave Map operator?
+ANS- D.Array
+
+Q14
+How we can scale deployed Mule application vertically on cloudhub?
+ANS- A.Changing worker size
+
+Q15
+Refer to the exhibit
+What Database expression transforms the input to the output?
+ANS- B)
+
+Q16
+A web client submits a request to http://localhost:8081/books/0471767840. The value "0471767840" is captured by a Set Variable transformer to a variable named booklSBN.
+What is the DataWeave expression to access booklSBN later in the flow?
+ANS- D.vars. booklSBN
+
+Q17
+Refer to the exhibits.
+The Validation component in the private flow throws an error. What response message is returned to a client request to the main flow's HTTP Listener?
+ANS- B.Error - main flow
+
+Q18
+A function named newProdCode needs to be defined that accepts two input parameters, an integer value for itemID and a string value for productCategory, and returns a new product code.
+What is the correct DataWeave code to define the newProdCode function?
+ANS- B.
+fun newProdCode(itemID: Number, productCategory: String) = "PC-" ++ productCategory ++ (itemID as String)
+
+
+Q19
+Refer to the exhibits.
+ANS- D.The mule application start successfully
+Web client requests can be received at URI on port 2222 and on port 3333.
+
+Q20
+As a part of requirement , application property defined below needs to be accessed as dataweave expression. What is the correct expression to map it to port value?
+ANS- A.{ port : p('db.port')}

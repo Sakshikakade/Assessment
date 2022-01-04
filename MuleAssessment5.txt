@@ -1,0 +1,94 @@
+1.What is the correct syntax to reference a fragment in RAML?
+ANS: D. examples: !include examples/BankAccountsExample.ram
+
+2. What is the use of API Notebooks?
+ANS: C. Test API functions
+
+3. What is the DataWeave expression to log the Content-Type header using a Logger component?
+ANS: A. #["Content-Type: " ++ attributes.headers.’content-type’]
+
+4. What is the trait name you would use for specifying client credentials in RAML?
+ANS: C. client-id-required
+
+5. What is the purpose of API autodiscovery?
+ANS: B. Allows a deployed Mule application to connect with API Manager to download policies and act as its own API proxy.
+
+6 What is NOT part of a Mule 4 event?
+ANS: C. inboundProperties
+
+7. According to MuleSoft, what is the Center for Enablement’s role in the new IT operating model?
+ANS: D. Creates and manages discoverable assets to be consumed by line of business developers.
+
+8. Which one of them is NOT a flow in Mule?
+ANS: D. async sub flow
+
+9. How are multiple conditions used in a Choice router to route events?
+ANS: C. To find the FIRST true condition, then distribute the event to the ONE matched route.
+
+10. What asset can NOT be created by using Design Center?
+ANS: B. API Portals
+
+11. A flow has a JMS Publish consume operation followed by a JMS Publish operation. Both of these operations have the default configurations.
+Which operation is asynchronous and which one is synchronous?
+ANS: A. Publish consume: Synchronous. Publish: Asynchronous.
+
+12 According to Semantic Versioning, which version would you change for incompatible API changes?
+ANS: C. MAJOR
+
+13 What is the use of DevKit in Mule 4?
+ANS: B. No use.
+
+14 A Scatter-Gather processes a number of separate HTTP requests. Each request returns a Mule event with a JSON payload.
+What is the final output of the Scatter-Gather?
+ANS: A. An Object containing all Mule event Objects.
+
+15 What are the latest specification of RAML available?
+ANS: B. 1
+
+16. http://dev.acme.com/api/patients?year=2016
+What should this endpoint return?
+ANS: D. Patients from year 2016
+
+17. DataWeave is tightly integrated with ____________.
+ANS: A. Mule runtime
+
+18 In the Database On Table Row operation, what does the Watermark column enable the On Table Row operation to do?
+ANS: C. To avoid duplicate processing of records in a database.
+
+19 An API has been created in Design Center.
+What is the next step to make the API discoverable?
+ANS: C. Publish the API to Anypoint Exchange.
+
+20 What is the correct way to format the decimal 200.1234 as a string to two decimal places?
+ANS: C. 200.1234 as String {format: ".0#"}
+
+21 How is policy defined in terms of classloader of an API?
+ANS: A. Classloader isolation does not exist between the application, the runtime and connectors, and policies.
+
+22 According to Mulesoft, how are Modern APIs treated as?
+ANS: A. products
+
+23 What is the object type returned by the File List operation?
+ANS: D. Array of Mule event objects
+
+24 Where are values of query parameters stored in the Mule event by the HTTP Listener?
+ANS: B. Attributes
+
+25 How can you call a flow from Dataweave?
+ANS: C. Look up function
+
+26 What is the value of the stepVar variable after the processing of records in a Batch Job?
+ANS: C. Null
+
+27 What is not an asset?
+ANS: B. Template
+
+28 How would you debug Mule applications?
+ANS: A. Using breakpoints
+
+29 What does to the attributes of a Mule event happen in a flow after an outbound HTTP Request is made?
+ANS: C. Attributes are replaced with new attributes from the HTTP Request response.
+
+30 The new RAML spec has been published to Anypoint Exchange with client credentials.
+ANS: D. Request access to the API in Anypoint Exchange.
+
